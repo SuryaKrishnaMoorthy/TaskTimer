@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styletodo.css">
+  <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+  <title>ToDoList</title>
+</head>
+
+<body>
+  <h1 id="welcome">Welcome to Task Timer</h1>
+
+  <div class="inputTask">
+    <input type="text" class="input" id="addTask" maxlength="50" placeholder="Add task here..">
+    <input type="number" class="input" id="addMinutes" min="0" value="5">
+    <input type="number" class="input" id="addSeconds" min="0" max="59" value=0>
+    <button type="button" id="addBtn">Add</button>
+
+  </div>
+
+  <div id="taskDiv">
+    <ol id="taskList">
+    </ol>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script type="text/javascript" src="todoList.js"></script>
+</body>
+
+</html>
