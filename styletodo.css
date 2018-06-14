@@ -1,104 +1,137 @@
-#welcome {
-  margin: -1%;
-  text-align: center;
-  width: 90%;
-  padding: 70px;
-  font-size: 70px;
-  font-family: 'Bilbo Swash Caps', cursive;
+.welcome {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    margin: auto auto 30px auto;
 }
 
 body {
-  background-color: #259096;
-}
-
-.inputTask {
-  text-align: center;
-  padding: 2px;
+    background-color: #259096;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 .input {
-  background-color: #01373d;
-  text-align: left;
-  padding: 15px;
-  border: 5px solid #027177;
-  border-radius: 20px;
-  font-size: 20px;
-  color: white;
-  height: 20px;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    min-width: 700px;
+    margin: auto auto 30px auto;
 }
 
-#addMinutes, #addSeconds {
-  width: 50px;
-  /* font-size: 40px; */
+.inputTask {
+    text-align: left;
+    padding: 5px 15px;
+    width: 300px;
 }
 
-#addBtn, #StartButton, .delTask {
-  background-color: #7baab7;
-  font-family: 'Bilbo Swash Caps', cursive;
-  padding: 15px;
-  text-align: center;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  margin: auto;
-  cursor: pointer;
-  border-radius: 20px;
+.inputTime {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.inputCommon {
+    background-color: #01373d;
+    border: 3px solid #027177;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    height: fit-content;
+    margin: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.addMinutes,
+.addSeconds {
+    width: 40px;
+}
+
+.time {
+    font-size: 14px;
+    margin: auto;
+}
+
+.addButton {
+    font-size: 15px;
+    margin: auto;
+    padding: 4px 10px;
+}
+
+.timerButton {
+    float: right;
+    margin: auto;
+    font-size: medium;
+    margin-top: -1px;
+    margin-right: 4px;
+    width: 75px;
+}
+
+.addButton,
+.timerButton {
+    background-color: #7baab7;
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, sans-serif;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.addButton:hover,
+.timerButton:hover {
+    background-color: #259096;
 }
 
 li {
-  cursor: pointer;
-  margin-left: 15%;
-  padding: 20px;
-  background: #3a7a82;
-  border-radius: 20px;
-  width: 65%;
-  text-align: center;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 2px;
+    padding: 15px;
+    background: #3a7a82;
+    border-radius: 20px;
+    width: 75%;
+    min-width: 900px;
+    text-align: center;
 }
 
 ol li:hover {
-  background: #78b6ba;
+    background: #78b6ba;
 }
 
-#task {
-  /* margin-left: 0%; */
-  border-radius: 20px;
-  float: left;
-  margin-top: -2%;
-  width: 50%;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  text-align: left;
-  font-size: 20px;
+.taskList {
+    border-radius: 20px;
+    float: left;
+    width: 45%;
+    text-align: left;
+    font-size: 15px;
 }
 
-#time {
-  margin-left: 0%;
-  padding: 17px;
-  /* border: 2px solid black;
-  border-radius: 20px; */
-  font-size: 20px;
-  color: white;
-  float: none;
-}
-
-#StartButton, .delTask {
-  float: right;
-  padding: 17px;
-  margin-top: -20px
+.timeList {
+    font-size: 14px;
+    color: white;
 }
 
 .complete {
-  text-decoration: line-through;
-  color: black;
-  background: #2C3E50;
+    text-decoration: line-through;
+    color: black;
+    background: #2C3E50;
 }
-.strike{
-  display: inline;
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
 }
-.clearfix:after {
-content: ".";
-display: block;
-height: 0;
-clear: both;
-visibility: hidden;
+
+.timerValue {
+    font-size: 150px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: auto auto 30px auto;
+    display: flex;
+    justify-content: center;
 }

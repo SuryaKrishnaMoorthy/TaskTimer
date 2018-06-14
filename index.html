@@ -2,29 +2,27 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="styletodo.css">
-  <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
-  <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="styletodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="todoList.js" defer></script>
+    <script src="timer.js" defer></script>
 </head>
 
 <body>
-  <h1 id="welcome">Welcome to Task Timer</h1>
-
-  <div class="inputTask">
-    <input type="text" class="input" id="addTask" maxlength="50" placeholder="Add task here..">
-    <input type="number" class="input" id="addMinutes" min="0" value="5">
-    <input type="number" class="input" id="addSeconds" min="0" max="59" value=0>
-    <button type="button" id="addBtn">Add</button>
-
-  </div>
-
-  <div id="taskDiv">
-    <ol id="taskList">
-    </ol>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script type="text/javascript" src="todoList.js"></script>
+    <h1 class="welcome">Welcome to Task Timer</h1>
+    <div class="input">
+        <input type="text" class="inputTask inputCommon addTask" maxlength="50" placeholder="Enter task here..">
+        <input type="number" class="inputTime inputCommon addMinutes" min="0" value="0"><span class="time">min(s)</span>
+        <input type="number" class="inputTime inputCommon addSeconds" min="0" max="59" value="5"><span class="time">sec(s)&nbsp&nbsp&nbsp</span>
+        <button type="button" class="addButton">Add Task</button>
+    </div>
+    <!-- Below is space for timer -->
+    <div class="timer"></div>
+    <!-- Below is space for task list -->
+    <div class="list"></div>
 </body>
 
 </html>

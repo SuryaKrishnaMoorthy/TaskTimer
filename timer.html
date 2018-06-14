@@ -2,20 +2,18 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title id="timerTitle">Timer</title>
-  
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Fira+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <title class="timerTitle">Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Fira+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" defer></script>
+    <script src="timer.js" defer></script>
 </head>
 
-<body>
-
-  <h1 id="time"></h1>
-  <h1 id='text'></h1>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script src="timer.js"></script>
+<body onmouseover="changeFontColor('black')" onmouseout="changeFontColor('transparent')">
+    <h3 class="taskName"></h3>
+    <h1 class="timeValue"></h1>
+    <h1 class="textValue"></h1>
 </body>
 
 </html>
