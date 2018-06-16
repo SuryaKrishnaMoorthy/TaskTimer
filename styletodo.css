@@ -11,14 +11,13 @@ body {
 }
 
 .input {
-    display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: fit-content;
-    min-width: 700px;
-    margin: auto auto 30px auto;
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	display: flex;
+	width: fit-content;
+	width: -moz-fit-content;
+	min-width: 700px;
+	margin: auto auto 30px auto;
 }
 
 .inputTask {
@@ -94,7 +93,6 @@ li {
     border-radius: 20px;
     width: 75%;
     min-width: 900px;
-    text-align: center;
 }
 
 ol li:hover {
@@ -134,4 +132,20 @@ select:focus {
     margin: auto auto 30px auto;
     display: flex;
     justify-content: center;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .input {
+		display: table !important;
+		text-align: center !important;
+		min-width: 900px !important;
+	}
+}
+
+@supports (-ms-accelerator:true) {
+	.input {
+		display: table !important;
+		text-align: center !important;
+		min-width: 900px !important;
+	}
 }
