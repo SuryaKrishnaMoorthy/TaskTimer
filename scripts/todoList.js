@@ -50,7 +50,7 @@ $(".addButton").click(function() {
                 /* To navigate to new window with parameters */
                 launch.click(function() {
                     if (!(li.hasClass("complete"))) {
-                        let url = "/timer.html?taskName=" + taskAndTime.task +
+                        let url = "./views/timer.html?taskName=" + taskAndTime.task +
                             "&minutes=" + taskAndTime.min + "&seconds=" + taskAndTime.sec;
                         window.open(url, '_blank');
                     } else {

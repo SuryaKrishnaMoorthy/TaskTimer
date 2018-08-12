@@ -1,2 +1,6 @@
 # TaskTimer
-A basic timer to track day to day activities.
+  A basic timer to track day to day activities.
+
+## About
+
+  

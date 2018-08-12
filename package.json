@@ -2,7 +2,7 @@
   "name": "tasktimer",
   "version": "1.0.0",
   "description": "A task tracking application with timer",
-  "main": "timer.js",
+  "main": "./scripts/timer.js",
   "scripts": {
     "start": "live-server"
   },
